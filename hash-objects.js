@@ -23,6 +23,10 @@
         this.getVal = function (obj) {
             return this.getHash()[this.getObjId(obj)]
         };
+        this.clear = function(){
+            this.hashObjs = {};
+            this.objsIdx = {};
+        };
     };
 
     if (!require.isBrowser)
