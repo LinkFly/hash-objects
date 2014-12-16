@@ -1,6 +1,6 @@
 {
   "name": "hash-objects",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The implementation of hash tables where the keys are objects",
   "main": "hash-objects.js",
   "directories": {
