@@ -2,6 +2,20 @@
  * Created by LinkFly-user on 15.12.2014.
  */
 (function(module) {
+    ///////// Config /////////
+    var uidObjectsModule = "uid-objects",
+        uidObjectsFile = "./libs/uid-objects-0.0.2/" + uidObjectsModule;
+    ///////////////////////////
+
+    ////////////////// Compatibility ///////////////////
+    if(require.isBrowser) {
+        var paths = {};
+        paths['uid-objects'] = '../' + uidObjectsFile;
+        require.config({paths: paths});
+        uidObjectsFile = uidObjectsModule;
+    } else define = require("amdefine")(module);
+///////////////////////////////////////////////
+
     var HashObjects = function (uid) {
         this.hashObjs = {};
         this.objsIdx = {};
@@ -29,12 +43,7 @@
         };
     };
 
-    if (!require.isBrowser)
-        define = require("C:/Program Files (x86)/nodejs/node_modules/amdefine/")(module);
-
-    var uidFile = 'uid';
-    if(!require.isBrowser) uidFile = "C:\\data-from-d\\my-js-libs\\uid\\uid.js";
-    define([uidFile], function(uid) {
+    define([uidObjectsModule], function(uid) {
         uid.setUidProp("_$uid");
         var hashObjs = new HashObjects(uid);
         return hashObjs;

@@ -1,0 +1,32 @@
+{
+  "name": "hash-objects",
+  "version": "0.0.1",
+  "description": "The implementation of hash tables where the keys are objects",
+  "main": "hash-objects.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "qunit": "0.7.5",
+    "amdefine": "0.1.0",
+    "amdrequire": "0.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/LinkFly/hash-objects.git"
+  },
+  "keywords": [
+    "hash",
+    "hash-tables",
+    "objects"
+  ],
+  "author": "Sergey Katrevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinkFly/hash-objects/issues"
+  },
+  "homepage": "https://github.com/LinkFly/hash-objects"
+}

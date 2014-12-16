@@ -1,0 +1,10 @@
+{
+  "name": "uid-objects",
+  "version": "0.0.1",
+  "main": "uid-objects.js",
+  "dependencies": {
+    "qunit": "0.7.5",
+    "amdefine": "0.1.0",
+    "amdrequire": "0.0.3"
+  }
+}
